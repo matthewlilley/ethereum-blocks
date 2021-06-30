@@ -12,10 +12,16 @@
     "deploy-kovan": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/kovan-blocks",
     "deploy-goerli": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/goerli-blocks",
     "deploy-ropsten": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/ropsten-blocks",
-    "deploy-poa": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/poa-core-blocks"
+    "deploy-poa": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/poa-core-blocks",
+    "deploy-fantom": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ sushiswap/fantom-blocks",
+    "deploy-okex": "graph deploy --node https://graph.kkt.one/node --ipfs https://graph.kkt.one/ipfs/ sushiswap/okex-blocks",
+    "deploy-harmony": "graph deploy --node https://sushi.graph.t.hmny.io:8020 --ipfs https://ipfs.infura.io:5001 sushiswap/harmony-blocks"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.17.1",
     "@graphprotocol/graph-ts": "0.17.0"
+  },
+  "devDependencies": {
+    "@sushiswap/core": "2.0.0-canary.0"
   }
 }
